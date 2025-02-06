@@ -795,6 +795,35 @@ section,
 }
 
 @media (max-width: 575px) {
+  body{
+    body{
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 30px; /* Título principal */
+  }
+  h2 {
+    font-size: 26px; /* Subtítulos */
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p, li, a {
+    font-size: 20px; /* Texto de párrafos, listas y enlaces */
+  }
+  button {
+    font-size: 21px; /* Botones deben ser un poco más grandes */
+  }
+  .contact .php-email-form {
+    padding: 21px;
+  }
+  .why-us h2{
+    font-size: 25px;
+}
+  .why-us p{
+      font-size: 22px;
+  }
+  }
   .contact .php-email-form {
     padding: 20px;
   }
