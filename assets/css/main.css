@@ -763,7 +763,8 @@ section,
   font-size: 14px;
 }
 
-.contact .btn-get-started {
+.contact .btn-get-started,
+.why-us .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-weight: 400;
@@ -777,7 +778,8 @@ section,
   text-align: center;
 }
 
-.contact .btn-get-started:hover {
+.contact .btn-get-started:hover,
+.why-us .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
