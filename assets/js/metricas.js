@@ -8,7 +8,7 @@
  */
 (function () {
   var GA_ID = "G-LP271GF55D";
-  var CLARITY_ID = "";
+  var CLARITY_ID = "zc7tzlsln0";
 
   var CLAVE_AVISO = "es_aviso_cookies"; // "aceptado" | "rechazado"
 
