@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Política de privacidad | Experiencia sensitiva</title>
+  <meta name="description" content="Cómo usa Experiencia Sensitiva la información de quienes visitan la web.">
+  <meta name="robots" content="noindex">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="privacidad-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h3 class="sitename">Experiencia sensitiva</h3>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Volver al inicio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="privacidad">
+      <div class="container" style="max-width: 820px;">
+
+        <h1>Política de privacidad</h1>
+        <p>En Experiencia Sensitiva cuidamos tu privacidad. Acá te contamos qué información se recopila cuando visitás esta web y para qué se usa.</p>
+
+        <h2>Qué información se recopila</h2>
+        <p>Cuando navegás la web se registran datos de uso de forma anónima: páginas y secciones que visitás, tiempo de permanencia, tipo de dispositivo y navegador, ciudad o región aproximada, desde dónde llegaste (por ejemplo, Instagram o Google) y los botones que tocás, como los de WhatsApp.</p>
+        <p>No se recopilan tu nombre, tu teléfono ni tu correo. Esos datos solo los conocemos si decidís escribirnos.</p>
+
+        <h2>Herramientas que usamos</h2>
+        <ul>
+          <li><strong>Google Analytics</strong>, de Google, para medir cuántas personas visitan la web y cómo llegan.</li>
+          <li><strong>Microsoft Clarity</strong>, de Microsoft, para entender cómo se usa la página y mejorarla. Clarity oculta automáticamente lo que se escribe en la web.</li>
+        </ul>
+        <p>Estas herramientas usan cookies, pequeños archivos que se guardan en tu navegador. Cada una tiene su propia política de privacidad, disponible en los sitios de Google y Microsoft.</p>
+
+        <h2>Para qué se usa</h2>
+        <p>Solo para mejorar la web y saber qué contenidos resultan más útiles. Esta información no se vende ni se comparte con otros fines.</p>
+
+        <h2>Cómo decir que no</h2>
+        <p>Al entrar a la web podés elegir <strong>Rechazar</strong> en el aviso de cookies y no se medirá tu visita. También podés borrar las cookies desde la configuración de tu navegador; la próxima vez que entres, el aviso aparecerá de nuevo.</p>
+        <p><button type="button" class="btn btn-outline-secondary btn-sm" id="cambiar-eleccion">Volver a elegir sobre las cookies</button></p>
+
+        <h2>Tus derechos</h2>
+        <p>De acuerdo con la Ley 25.326 de Protección de Datos Personales, podés pedir acceso, corrección o eliminación de tus datos escribiéndonos por <a href="https://wa.me/5491130626922" target="_blank">WhatsApp</a>. La Agencia de Acceso a la Información Pública es el organismo de control en la materia.</p>
+
+        <p class="mt-5"><a href="index.html">← Volver al inicio</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Experiencia sensitiva</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.instagram.com/experienciasensitivamassage" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/5491130626922" target="_blank"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/metricas.js"></script>
+  <script>
+    document.getElementById("cambiar-eleccion").addEventListener("click", function () {
+      try { localStorage.removeItem("es_aviso_cookies"); } catch (e) {}
+      location.reload();
+    });
+  </script>
+
+</body>
+
+</html>

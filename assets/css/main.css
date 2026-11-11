@@ -940,3 +940,92 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Aviso de cookies
+--------------------------------------------------------------*/
+.aviso-cookies {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 99999;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  padding: 16px 20px;
+  background: #ffffff;
+  color: var(--default-color);
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.18);
+  font-size: 14px;
+}
+
+.aviso-cookies p {
+  margin: 0;
+  flex: 1 1 280px;
+}
+
+.aviso-cookies a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.aviso-cookies-botones {
+  display: flex;
+  gap: 10px;
+}
+
+.aviso-cookies button {
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.aviso-cookies .aviso-rechazar {
+  background: transparent;
+  color: var(--accent-color);
+}
+
+.aviso-cookies .aviso-aceptar {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+.aviso-cookies .aviso-aceptar:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+
+.footer .enlace-privacidad {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Página de privacidad
+--------------------------------------------------------------*/
+.privacidad {
+  padding: 140px 0 60px 0;
+}
+
+.privacidad h1 {
+  color: var(--accent-color);
+  margin-bottom: 24px;
+}
+
+.privacidad h2 {
+  font-size: 20px;
+  margin-top: 32px;
+}
+
+.privacidad-page .header {
+  background-color: var(--accent-color);
+}
