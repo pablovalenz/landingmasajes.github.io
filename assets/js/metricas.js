@@ -7,7 +7,7 @@
  * Si un código queda vacío, esa herramienta no se carga.
  */
 (function () {
-  var GA_ID = "";
+  var GA_ID = "G-LP271GF55D";
   var CLARITY_ID = "";
 
   var CLAVE_AVISO = "es_aviso_cookies"; // "aceptado" | "rechazado"
