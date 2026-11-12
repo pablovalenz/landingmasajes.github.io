@@ -78,6 +78,26 @@
     }
   }, true);
 
+  // ---------- Clics en la Tienda (Mercado Libre) ----------
+  document.addEventListener("click", function (ev) {
+    var link = ev.target.closest ? ev.target.closest("a[data-producto]") : null;
+    if (!link) return;
+    var producto = link.getAttribute("data-producto") || "";
+    var categoria = link.getAttribute("data-categoria") || "";
+
+    if (window.gtag && window.__gaCargado) {
+      gtag("event", "click_tienda", {
+        producto: producto,
+        categoria: categoria,
+        transport_type: "beacon"
+      });
+    }
+    if (window.clarity && window.__clarityCargado) {
+      window.clarity("event", "click_tienda");
+      window.clarity("set", "producto", producto);
+    }
+  }, true);
+
   // ---------- Aviso de cookies ----------
   function mostrarAviso() {
     var aviso = document.createElement("div");
