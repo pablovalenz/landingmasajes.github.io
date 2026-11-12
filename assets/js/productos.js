@@ -14,12 +14,11 @@ window.CATEGORIAS = ["Velas", "Inciensos", "Cristales", "Aceites"];
 
 window.PRODUCTOS = [
   {
-    nombre: "Vela aromática de lavanda",
+    nombre: "Vela de soja Vainilla y Café",
     categoria: "Velas",
-    descripcion: "Una luz cálida y un aroma suave para crear tu propio momento de calma en casa.",
-    imagen: "",
-    link: "#",
-    ejemplo: true
+    descripcion: "Cera de soja en vaso de vidrio y mecha de madera que crepita suave. Un aroma cálido a vainilla y café para darle a tu casa un clima de pausa.",
+    imagen: "assets/img/tienda/vela-lotus-zen-vainilla-cafe.jpg",
+    link: "https://articulo.mercadolibre.com.ar/MLA-3295507706?attributes=SCENT:VmFpbmlsbGEgeSBjYWbDqQ==,COLOR_SECONDARY_COLOR:VmFpbmlsbGEgeSBjYWbDqQ=="
   },
   {
     nombre: "Sahumerios de palo santo",

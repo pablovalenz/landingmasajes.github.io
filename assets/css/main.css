@@ -1186,5 +1186,6 @@ section,
   .tienda .card .tienda-cuerpo h2 { font-size: 15px; }
   .tienda .card .tienda-cuerpo p { font-size: 13px; line-height: 20px; }
   .tienda-cuerpo { padding: 14px 10px 18px 10px; }
-  .tienda-boton { font-size: 12px; padding: 7px 12px; }
+  .tienda-boton { font-size: 12px; padding: 7px 12px; white-space: nowrap; }
+  .tienda-boton i { display: none; }
 }
