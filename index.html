@@ -484,6 +484,27 @@ Trabajo con la energía sutil del cuerpo, ayudándote a desbloquear emociones, a
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Reseñas largas: recortar con "Ver más" -->
+  <script>
+    (function () {
+      document.querySelectorAll(".resena blockquote").forEach(function (bq) {
+        bq.classList.add("recortada");
+        if (bq.scrollHeight <= bq.clientHeight + 2) { bq.classList.remove("recortada"); return; }
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "resena-ver-mas";
+        btn.textContent = "Ver más";
+        btn.setAttribute("aria-expanded", "false");
+        btn.addEventListener("click", function () {
+          var abierta = bq.classList.toggle("recortada") === false;
+          btn.textContent = abierta ? "Ver menos" : "Ver más";
+          btn.setAttribute("aria-expanded", abierta ? "true" : "false");
+        });
+        bq.insertAdjacentElement("afterend", btn);
+      });
+    })();
+  </script>
+
   <!-- Métricas (Google Analytics, Clarity y clics en WhatsApp) -->
   <script src="assets/js/metricas.js"></script>
 
