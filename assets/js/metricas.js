@@ -78,6 +78,19 @@
     }
   }, true);
 
+  // ---------- Otros clics medidos (data-evento) ----------
+  document.addEventListener("click", function (ev) {
+    var link = ev.target.closest ? ev.target.closest("[data-evento]") : null;
+    if (!link) return;
+    var evento = link.getAttribute("data-evento");
+    if (window.gtag && window.__gaCargado) {
+      gtag("event", evento, { transport_type: "beacon" });
+    }
+    if (window.clarity && window.__clarityCargado) {
+      window.clarity("event", evento);
+    }
+  }, true);
+
   // ---------- Aviso de cookies ----------
   function mostrarAviso() {
     var aviso = document.createElement("div");
