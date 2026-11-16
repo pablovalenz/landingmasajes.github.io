@@ -1131,3 +1131,107 @@ section,
   text-decoration: underline;
   cursor: pointer;
 }
+
+/*--------------------------------------------------------------
+# Portada (hero) y títulos de sección
+--------------------------------------------------------------*/
+.section-title h2.titulo-seccion {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(40, 10, 35, 0.35) 0%, rgba(40, 10, 35, 0.55) 100%);
+}
+
+.hero .hero-marca {
+  margin: 0 0 6px 0;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(248, 244, 242, 0.85);
+}
+
+.hero h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.15;
+  color: #f8f4f2;
+}
+
+.hero .hero-promesa {
+  margin: 16px 0 0 0;
+  font-size: 22px;
+  font-style: italic;
+  color: #f8f4f2;
+}
+
+.hero .hero-zona {
+  margin: 12px 0 0 0;
+  font-size: 16px;
+  color: rgba(248, 244, 242, 0.9);
+}
+
+.hero-botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.hero .hero-botones .btn-get-started {
+  margin: 0;
+}
+
+.hero .btn-get-started i {
+  margin-right: 6px;
+}
+
+.hero .btn-secundario {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  border: 1px solid rgba(248, 244, 242, 0.8);
+  color: #f8f4f2;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.hero .btn-secundario:hover {
+  background: rgba(248, 244, 242, 0.15);
+  color: #ffffff;
+}
+
+.hero .hero-resenas {
+  display: inline-block;
+  margin-top: 22px;
+  font-size: 15px;
+  color: #f8f4f2;
+}
+
+.hero .hero-resenas span {
+  color: #f5b301;
+  letter-spacing: 2px;
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 34px; }
+  .hero .hero-promesa { font-size: 19px; }
+  .hero .hero-zona { font-size: 15px; }
+  .hero .hero-zona span { display: block; }
+  .hero .hero-zona .hero-sep { display: none; }
+  .hero-botones { flex-direction: column; align-items: center; }
+  .hero .hero-botones a { min-width: 250px; }
+  .section-title h2.titulo-seccion { font-size: 34px; }
+}
