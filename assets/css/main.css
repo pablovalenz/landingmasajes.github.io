@@ -1235,3 +1235,8 @@ section,
   .hero .hero-botones a { min-width: 250px; }
   .section-title h2.titulo-seccion { font-size: 34px; }
 }
+
+.footer .credito-plantilla {
+  font-size: 12px;
+  opacity: 0.7;
+}
