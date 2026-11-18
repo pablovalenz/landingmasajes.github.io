@@ -116,7 +116,7 @@ foreach ($CFG['servicios'] as $k => $s) {
 </main>
 
 <footer>
-  <a href="https://instagram.com/experienciasensitivamassage" target="_blank" rel="noopener">@experienciasensitivamassage</a>
+  <a href="/">Volver al sitio</a> · <a href="https://instagram.com/experienciasensitivamassage" target="_blank" rel="noopener">@experienciasensitivamassage</a>
 </footer>
 
 <script>
