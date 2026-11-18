@@ -53,7 +53,7 @@ return [
         ],
         'full' => [
             'nombre'  => 'Full Sensaciones',
-            'detalle' => '120 min · La experiencia más completa e intensa. Los detalles los conversamos por mensaje privado.',
+            'detalle' => '120 min · La experiencia más completa e intensa. Los detalles los conversamos.',
             'minutos' => 120,
             'precio'  => 85000,
         ],
