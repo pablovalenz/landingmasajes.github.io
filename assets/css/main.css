@@ -1250,7 +1250,7 @@ section,
 # Masaje sensitivo
 --------------------------------------------------------------*/
 .sensitivo {
-  background: color-mix(in srgb, var(--accent-color), white 96%);
+  background: #efe4f6;
 }
 
 .sensitivo-intro {
